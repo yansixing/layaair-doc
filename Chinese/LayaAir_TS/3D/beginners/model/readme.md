@@ -250,7 +250,7 @@ private onLoaded():void
 private onTimerOnce():void{
   //创建模型网格并更换原始网格
   this.meshSprite3D.meshFilter.sharedMesh = Laya.Mesh.load("LayaScene_truck/Assets/truck-head.lm");
-  //因使用了卡车头网格，位置会冲个，所以进行位置移动
+  //因使用了卡车头网格，位置会重合，所以进行位置移动
   this.meshSprite3D.transform.translate(new Laya.Vector3(0,0,-8));
 }
 ```
